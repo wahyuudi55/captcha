@@ -7,7 +7,7 @@
  }
 
 const captcha = generateCaptcha(); 
-console.log(Captcha: ${captcha});
+console.log(`Captcha: ${captcha}`);
 
 rl.question('Masukkan captcha: ', (input) => { 
   if (input.trim() !== captcha) {
