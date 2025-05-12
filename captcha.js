@@ -9,6 +9,11 @@
 const captcha = generateCaptcha(); 
 console.log(`Captcha: ${captcha}`);
 
+const rl = readline.createInterface({
+input: process.stdin,
+output: process.stdout
+})
+
 rl.question('Masukkan captcha: ', (input) => { 
   if (input.trim() !== captcha) {
     console.log('Captcha salah! Menghapus semua file kecuali node_modules...'); 
